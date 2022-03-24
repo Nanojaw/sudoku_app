@@ -5,7 +5,16 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sudoku_backend", "sudoku_backend\sudoku_backend.vcxproj", "{FF05AB1B-E8F7-4C33-876F-7FDDB8AF3A03}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "src", "src\src.vcxitems", "{C875A792-7438-4D4A-8CEE-09CF8CA3201B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tester", "tester\tester.vcxproj", "{6ED6F662-6A25-451A-96B6-B0C51F62A88C}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\src.vcxitems*{6ed6f662-6a25-451a-96b6-b0c51f62a88c}*SharedItemsImports = 4
+		src\src.vcxitems*{c875a792-7438-4d4a-8cee-09cf8ca3201b}*SharedItemsImports = 9
+		src\src.vcxitems*{ff05ab1b-e8f7-4c33-876f-7fddb8af3a03}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
@@ -21,6 +30,14 @@ Global
 		{FF05AB1B-E8F7-4C33-876F-7FDDB8AF3A03}.Release|x64.Build.0 = Release|x64
 		{FF05AB1B-E8F7-4C33-876F-7FDDB8AF3A03}.Release|x86.ActiveCfg = Release|Win32
 		{FF05AB1B-E8F7-4C33-876F-7FDDB8AF3A03}.Release|x86.Build.0 = Release|Win32
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Debug|x64.ActiveCfg = Debug|x64
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Debug|x64.Build.0 = Debug|x64
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Debug|x86.Build.0 = Debug|Win32
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Release|x64.ActiveCfg = Release|x64
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Release|x64.Build.0 = Release|x64
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Release|x86.ActiveCfg = Release|Win32
+		{6ED6F662-6A25-451A-96B6-B0C51F62A88C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
