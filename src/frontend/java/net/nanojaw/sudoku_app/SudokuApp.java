@@ -10,11 +10,12 @@ import java.io.IOException;
 public class SudokuApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SudokuApp.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 400);
+        FXMLLoader fxmlLoader = new FXMLLoader(SudokuApp.class.getResource("sudoku.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 400, 516);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+        scene.getRoot().requestFocus();
     }
 
     public static void main(String[] args) {
