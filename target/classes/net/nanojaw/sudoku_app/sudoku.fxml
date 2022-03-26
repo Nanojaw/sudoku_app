@@ -42,7 +42,7 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
+        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER" >
           <font>
             <Font name="Verdana" size="20.0" />
           </font>

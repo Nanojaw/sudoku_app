@@ -8,6 +8,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 
+import java.util.Arrays;
+
 public class SudokuController {
 
     String sudoku;
@@ -15,14 +17,17 @@ public class SudokuController {
     @FXML
     GridPane mainGrid;
 
-    Byte[] ToGrid(Byte[] bytes) {
-        Byte[] grid = new Byte[bytes.length];
+    // TODO Make changing numbers only work for numbers that fit
+
+    // Convert from regular sudoku to grid
+    byte[] ToGrid(byte[] bytes) {
+        byte[] grid = new byte[bytes.length];
 
         int index = 0;
-        for (int a = 0; a < 81; a += 27) {
-            for (int b = 0; b < 9; b += 3) {
-                for (int c = 0; c < 27; c += 9) {
-                    for (int d = 0; d < 3; d++) {
+        for (int a = 0; a < 81; a += 27) { // Go down in the main grid
+            for (int b = 0; b < 9; b += 3) { // Go left in the main grid
+                for (int c = 0; c < 27; c += 9) { // Go down in the square
+                    for (int d = 0; d < 3; d++) { // Go left in the square
                         grid[a + b + c + d] = bytes[index];
                         index++;
                     }
@@ -32,9 +37,9 @@ public class SudokuController {
         return grid;
     }
 
-    String bytesToString(Byte[] bytes) {
+    String bytesToString(byte[] bytes) {
         StringBuilder str = new StringBuilder();
-        for (Byte aByte : bytes) {
+        for (byte aByte : bytes) {
             if (aByte == 0) {
                 str.append(" ");
             } else {
@@ -45,9 +50,8 @@ public class SudokuController {
     }
 
     public void initialize() {
-        // TODO Add when backend is done
-        //sudoku = backend.LoadSudoku();
-        Byte[] bs = ToGrid(new Byte[]{
+
+        sudoku = new String(new byte[]{
                 5, 0, 0, 0, 0, 0, 2, 8, 0,
                 0, 0, 0, 2, 0, 9, 0, 4, 5,
                 0, 7, 0, 0, 8, 0, 0, 0, 0,
@@ -58,22 +62,22 @@ public class SudokuController {
 
                 9, 1, 0, 0, 2, 6, 0, 0, 0,
                 2, 0, 0, 0, 0, 0, 0, 0, 4,
-                0, 5, 0, 8, 0, 7, 1, 0, 0
-        });
+                0, 5, 0, 8, 0, 7, 1, 0, 0});
+        String grid = bytesToString(ToGrid(sudoku.getBytes()));
+        // TODO Add when backend is done
+        //sudoku = backend.LoadSudoku();
+        //grid = bytesToString(ToGrid(sudoku.getBytes()));
 
-        sudoku = bytesToString(bs);
-        System.out.println(sudoku);
-
-        Object[] objs = mainGrid.getChildren().toArray();
+        Object[] objs = mainGrid.getChildren().toArray(); // Get the 3x3 squares
         int index = 0;
         for (int i = 0; i < objs.length - 1; i++) { // Last object is a group
             GridPane square = (GridPane) objs[i];
-            Object[] boxes = square.getChildren().toArray();
+            Object[] boxes = square.getChildren().toArray(); // Get the number boxes in the squares
             for (int j = 0; j < boxes.length - 1; j++) {
                 StackPane pane = (StackPane) boxes[j];
-                Button button = (Button) pane.getChildren().toArray()[0];
+                Button button = (Button) pane.getChildren().toArray()[0]; // The first object is the button
 
-                button.setText(String.valueOf(sudoku.charAt(index)));
+                button.setText(String.valueOf(grid.charAt(index)));
                 index++;
             }
         }
@@ -86,6 +90,7 @@ public class SudokuController {
                 caller.setText(keyEvent.getCode().getChar());
                 if(keyEvent.getCode() == KeyCode.DIGIT0) caller.setText(" "); // If 0, set to blank
             }
+
         });
     }
 }
