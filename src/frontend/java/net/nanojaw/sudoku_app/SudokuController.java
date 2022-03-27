@@ -1,23 +1,33 @@
 package net.nanojaw.sudoku_app;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
-
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.util.Duration;
 
-import java.util.Arrays;
+import java.util.Map;
 
 public class SudokuController {
 
-    String sudoku;
+    Sudoku sudoku;
 
     @FXML
     GridPane mainGrid;
 
-    // TODO Make changing numbers only work for numbers that fit
+    @FXML
+    Label label;
+
+    boolean canPlace(KeyCode code, Map<Object, Object> property) {
+        return sudoku.fits(Integer.parseInt(code.getName()), (int) property.get("index"));
+    }
 
     // Convert from regular sudoku to grid
     byte[] ToGrid(byte[] bytes) {
@@ -51,7 +61,7 @@ public class SudokuController {
 
     public void initialize() {
 
-        sudoku = new String(new byte[]{
+        sudoku = new Sudoku(new byte[]{
                 5, 0, 0, 0, 0, 0, 2, 8, 0,
                 0, 0, 0, 2, 0, 9, 0, 4, 5,
                 0, 7, 0, 0, 8, 0, 0, 0, 0,
@@ -63,7 +73,7 @@ public class SudokuController {
                 9, 1, 0, 0, 2, 6, 0, 0, 0,
                 2, 0, 0, 0, 0, 0, 0, 0, 4,
                 0, 5, 0, 8, 0, 7, 1, 0, 0});
-        String grid = bytesToString(ToGrid(sudoku.getBytes()));
+        String grid = bytesToString(ToGrid(sudoku.sudoku));
         // TODO Add when backend is done
         //sudoku = backend.LoadSudoku();
         //grid = bytesToString(ToGrid(sudoku.getBytes()));
@@ -77,20 +87,54 @@ public class SudokuController {
                 StackPane pane = (StackPane) boxes[j];
                 Button button = (Button) pane.getChildren().toArray()[0]; // The first object is the button
 
+                // Associate button with index
                 button.setText(String.valueOf(grid.charAt(index)));
+                button.getProperties().putIfAbsent("index", index);
+
+                if (grid.charAt(index) != ' ') button.setDisable(true);
                 index++;
             }
         }
+    }
+
+    void cantPlace(Button caller) {
+        caller.setText(" ");
+
+        Background old = caller.getBackground();
+        Background back = new Background(new BackgroundFill(Color.RED, CornerRadii.EMPTY, Insets.EMPTY));
+
+        Timeline fade = new Timeline(
+                new KeyFrame(
+                        Duration.millis(0),
+                        new KeyValue(caller.backgroundProperty(), back)
+                ),
+                new KeyFrame(
+                        Duration.millis(20),
+                        new KeyValue(caller.backgroundProperty(), old)
+                )
+        );
+
+        fade.playFromStart();
     }
 
     public void onSelect(ActionEvent evt) {
         Button caller = (Button) evt.getSource(); // Get caller button
         caller.setOnKeyReleased(keyEvent -> { // Bind lambda to OnKeyReleased, paused when other button is clicked
             if (keyEvent.getCode().isDigitKey()) {
+                if (keyEvent.getCode() == KeyCode.DIGIT0) {
+                    caller.setText(" "); // If 0, set to blank
+                    return;
+                }
+                if (!canPlace(keyEvent.getCode(), caller.getProperties())) {
+                    cantPlace(caller);
+                    return;
+                }
                 caller.setText(keyEvent.getCode().getChar());
-                if(keyEvent.getCode() == KeyCode.DIGIT0) caller.setText(" "); // If 0, set to blank
-            }
 
+                sudoku.sudoku[(int) caller.getProperties().get("index")] = Byte.parseByte(keyEvent.getCode().getChar());
+
+                //TODO Implement victory checking
+            }
         });
     }
 }

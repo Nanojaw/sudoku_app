@@ -14,7 +14,7 @@
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
-   <Label text="Sudoku" textAlignment="CENTER">
+   <Label fx:id="label" text="Sudoku" textAlignment="CENTER">
       <font>
          <Font name="Verdana Bold" size="40.0" />
       </font>
@@ -42,66 +42,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER" >
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -117,66 +90,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -192,66 +138,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -267,66 +186,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -342,66 +234,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -417,66 +282,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -492,66 +330,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -567,66 +378,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
@@ -642,66 +426,39 @@
         <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
       </rowConstraints>
       <StackPane prefHeight="200.0" prefWidth="200.0">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="90.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-        <Button mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
-          <font>
-            <Font name="Verdana" size="20.0" />
-          </font>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSelect" stylesheets="@number-button.css" text="0" textAlignment="CENTER">
         </Button>
       </StackPane>
     </GridPane>
