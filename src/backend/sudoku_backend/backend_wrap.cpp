@@ -17,28 +17,46 @@
 #endif
 
 
-
 #ifdef __cplusplus
 /* SwigValueWrapper is described in swig.swg */
-template<typename T> class SwigValueWrapper {
-  struct SwigMovePointer {
-    T *ptr;
-    SwigMovePointer(T *p) : ptr(p) { }
-    ~SwigMovePointer() { delete ptr; }
-    SwigMovePointer& operator=(SwigMovePointer& rhs) { T* oldptr = ptr; ptr = 0; delete oldptr; ptr = rhs.ptr; rhs.ptr = 0; return *this; }
-  } pointer;
-  SwigValueWrapper& operator=(const SwigValueWrapper<T>& rhs);
-  SwigValueWrapper(const SwigValueWrapper<T>& rhs);
+template <typename T>
+class SwigValueWrapper
+{
+    struct SwigMovePointer
+    {
+        T* ptr;
+        SwigMovePointer(T* p) : ptr(p) { }
+        ~SwigMovePointer() { delete ptr; }
+
+        SwigMovePointer& operator=(SwigMovePointer& rhs)
+        {
+            T* oldptr = ptr;
+            ptr = 0;
+            delete oldptr;
+            ptr = rhs.ptr;
+            rhs.ptr = 0;
+            return *this;
+        }
+    } pointer;
+
+    SwigValueWrapper& operator=(const SwigValueWrapper<T>& rhs);
+    SwigValueWrapper(const SwigValueWrapper<T>& rhs);
 public:
-  SwigValueWrapper() : pointer(0) { }
-  SwigValueWrapper& operator=(const T& t) { SwigMovePointer tmp(new T(t)); pointer = tmp; return *this; }
-  operator T&() const { return *pointer.ptr; }
-  T *operator&() { return pointer.ptr; }
+    SwigValueWrapper() : pointer(0) { }
+
+    SwigValueWrapper& operator=(const T& t)
+    {
+        SwigMovePointer tmp(new T(t));
+        pointer = tmp;
+        return *this;
+    }
+
+    operator T&() const { return *pointer.ptr; }
+    T* operator&() { return pointer.ptr; }
 };
 
-template <typename T> T SwigValueInit() {
-  return T();
-}
+template <typename T>
+T SwigValueInit() { return T(); }
 #endif
 
 /* -----------------------------------------------------------------------------
@@ -184,49 +202,50 @@ template <typename T> T SwigValueInit() {
 
 
 /* Support for throwing Java exceptions */
-typedef enum {
-  SWIG_JavaOutOfMemoryError = 1,
-  SWIG_JavaIOException,
-  SWIG_JavaRuntimeException,
-  SWIG_JavaIndexOutOfBoundsException,
-  SWIG_JavaArithmeticException,
-  SWIG_JavaIllegalArgumentException,
-  SWIG_JavaNullPointerException,
-  SWIG_JavaDirectorPureVirtual,
-  SWIG_JavaUnknownError,
-  SWIG_JavaIllegalStateException,
-} SWIG_JavaExceptionCodes;
+using SWIG_JavaExceptionCodes = enum
+{
+    SWIG_JavaOutOfMemoryError = 1,
+    SWIG_JavaIOException,
+    SWIG_JavaRuntimeException,
+    SWIG_JavaIndexOutOfBoundsException,
+    SWIG_JavaArithmeticException,
+    SWIG_JavaIllegalArgumentException,
+    SWIG_JavaNullPointerException,
+    SWIG_JavaDirectorPureVirtual,
+    SWIG_JavaUnknownError,
+    SWIG_JavaIllegalStateException,
+};
 
-typedef struct {
-  SWIG_JavaExceptionCodes code;
-  const char *java_exception;
-} SWIG_JavaExceptions_t;
+using SWIG_JavaExceptions_t = struct
+{
+    SWIG_JavaExceptionCodes code;
+    const char* java_exception;
+};
 
 
-static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionCodes code, const char *msg) {
-  jclass excep;
-  static const SWIG_JavaExceptions_t java_exceptions[] = {
-    { SWIG_JavaOutOfMemoryError, "java/lang/OutOfMemoryError" },
-    { SWIG_JavaIOException, "java/io/IOException" },
-    { SWIG_JavaRuntimeException, "java/lang/RuntimeException" },
-    { SWIG_JavaIndexOutOfBoundsException, "java/lang/IndexOutOfBoundsException" },
-    { SWIG_JavaArithmeticException, "java/lang/ArithmeticException" },
-    { SWIG_JavaIllegalArgumentException, "java/lang/IllegalArgumentException" },
-    { SWIG_JavaNullPointerException, "java/lang/NullPointerException" },
-    { SWIG_JavaDirectorPureVirtual, "java/lang/RuntimeException" },
-    { SWIG_JavaUnknownError,  "java/lang/UnknownError" },
-    { SWIG_JavaIllegalStateException, "java/lang/IllegalStateException" },
-    { (SWIG_JavaExceptionCodes)0,  "java/lang/UnknownError" }
-  };
-  const SWIG_JavaExceptions_t *except_ptr = java_exceptions;
+static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv* jenv, SWIG_JavaExceptionCodes code, const char* msg)
+{
+    jclass excep;
+    static const SWIG_JavaExceptions_t java_exceptions[] = {
+        {SWIG_JavaOutOfMemoryError, "java/lang/OutOfMemoryError"},
+        {SWIG_JavaIOException, "java/io/IOException"},
+        {SWIG_JavaRuntimeException, "java/lang/RuntimeException"},
+        {SWIG_JavaIndexOutOfBoundsException, "java/lang/IndexOutOfBoundsException"},
+        {SWIG_JavaArithmeticException, "java/lang/ArithmeticException"},
+        {SWIG_JavaIllegalArgumentException, "java/lang/IllegalArgumentException"},
+        {SWIG_JavaNullPointerException, "java/lang/NullPointerException"},
+        {SWIG_JavaDirectorPureVirtual, "java/lang/RuntimeException"},
+        {SWIG_JavaUnknownError, "java/lang/UnknownError"},
+        {SWIG_JavaIllegalStateException, "java/lang/IllegalStateException"},
+        {(SWIG_JavaExceptionCodes)0, "java/lang/UnknownError"}
+    };
+    const SWIG_JavaExceptions_t* except_ptr = java_exceptions;
 
-  while (except_ptr->code != code && except_ptr->code)
-    except_ptr++;
+    while (except_ptr->code != code && except_ptr->code) except_ptr++;
 
-  jenv->ExceptionClear();
-  excep = jenv->FindClass(except_ptr->java_exception);
-  if (excep)
-    jenv->ThrowNew(excep, msg);
+    jenv->ExceptionClear();
+    excep = jenv->FindClass(except_ptr->java_exception);
+    if (excep) jenv->ThrowNew(excep, msg);
 }
 
 
@@ -242,79 +261,85 @@ static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionC
 extern "C" {
 #endif
 
-SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_GenerateSudoku(JNIEnv *jenv, jclass jcls) {
-  jstring jresult = 0 ;
-  char *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (char *)GenerateSudoku();
-  if (result) jresult = jenv->NewStringUTF((const char *)result);
-  return jresult;
+SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_GenerateSudoku(JNIEnv* jenv, jclass jcls)
+{
+    jstring jresult = 0;
+    char* result = 0;
+
+    (void)jenv;
+    (void)jcls;
+    result = (char*)GenerateSudoku();
+    if (result) jresult = jenv->NewStringUTF((const char*)result);
+    return jresult;
 }
 
 
-SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_GenerateHexSudoku(JNIEnv *jenv, jclass jcls) {
-  jstring jresult = 0 ;
-  char *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (char *)GenerateHexSudoku();
-  if (result) jresult = jenv->NewStringUTF((const char *)result);
-  return jresult;
+SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_GenerateHexSudoku(JNIEnv* jenv, jclass jcls)
+{
+    jstring jresult = 0;
+    char* result = 0;
+
+    (void)jenv;
+    (void)jcls;
+    result = (char*)GenerateHexSudoku();
+    if (result) jresult = jenv->NewStringUTF((const char*)result);
+    return jresult;
 }
 
 
-SWIGEXPORT void JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_Free(JNIEnv *jenv, jclass jcls, jint jarg1) {
-  Sudokutype arg1 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = (Sudokutype)jarg1; 
-  Free(arg1);
+SWIGEXPORT void JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_Free(JNIEnv* jenv, jclass jcls, jint jarg1)
+{
+    sudokutype arg1;
+
+    (void)jenv;
+    (void)jcls;
+    arg1 = (sudokutype)jarg1;
+    Free(arg1);
 }
 
 
-SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_LoadSudoku(JNIEnv *jenv, jclass jcls) {
-  jstring jresult = 0 ;
-  char *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (char *)LoadSudoku();
-  if (result) jresult = jenv->NewStringUTF((const char *)result);
-  return jresult;
+SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_LoadSudoku(JNIEnv* jenv, jclass jcls)
+{
+    jstring jresult = 0;
+    char* result = 0;
+
+    (void)jenv;
+    (void)jcls;
+    result = (char*)LoadSudoku();
+    if (result) jresult = jenv->NewStringUTF((const char*)result);
+    return jresult;
 }
 
 
-SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_LoadHexSudoku(JNIEnv *jenv, jclass jcls) {
-  jstring jresult = 0 ;
-  char *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (char *)LoadHexSudoku();
-  if (result) jresult = jenv->NewStringUTF((const char *)result);
-  return jresult;
+SWIGEXPORT jstring JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_LoadHexSudoku(JNIEnv* jenv, jclass jcls)
+{
+    jstring jresult = 0;
+    char* result = 0;
+
+    (void)jenv;
+    (void)jcls;
+    result = (char*)LoadHexSudoku();
+    if (result) jresult = jenv->NewStringUTF((const char*)result);
+    return jresult;
 }
 
 
-SWIGEXPORT void JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_SaveSudoku(JNIEnv *jenv, jclass jcls) {
-  (void)jenv;
-  (void)jcls;
-  SaveSudoku();
+SWIGEXPORT void JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_SaveSudoku(JNIEnv* jenv, jclass jcls)
+{
+    (void)jenv;
+    (void)jcls;
+    SaveSudoku();
 }
 
 
-SWIGEXPORT void JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_SaveHexSudoku(JNIEnv *jenv, jclass jcls) {
-  (void)jenv;
-  (void)jcls;
-  SaveHexSudoku();
+SWIGEXPORT void JNICALL Java_net_nanojaw_sudoku_1app_backend_backendJNI_SaveHexSudoku(JNIEnv* jenv, jclass jcls)
+{
+    (void)jenv;
+    (void)jcls;
+    SaveHexSudoku();
 }
 
 
 #ifdef __cplusplus
 }
 #endif
-

@@ -1,0 +1,17 @@
+﻿  pch.cpp
+  backend.cpp
+  backend_wrap.cpp
+  Sodoku.cpp
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(47,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(85,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(156,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(346,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(483,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(550,53): warning C4018: '>': signed/unsigned mismatch
+  Square_Matrix.cpp
+  Generating Code...
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(695): warning C4715: 'Sodoku::next_cell': not all control paths return a value
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(855): warning C4715: 'Sodoku::operator&=': not all control paths return a value
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\SudokuLogic\SourceFiles\Sodoku.cpp(737): warning C4715: 'Sodoku::back_cell': not all control paths return a value
+     Creating library C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\x64\Debug\sudoku_backend.lib and object C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\x64\Debug\sudoku_backend.exp
+  sudoku_backend.vcxproj -> C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\x64\Debug\sudoku_backend.dll
