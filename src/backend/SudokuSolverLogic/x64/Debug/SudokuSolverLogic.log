@@ -1,1 +1,3 @@
-﻿  SudokuSolverLogic.vcxproj -> C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\x64\Debug\SudokuSolverLogic.exe
+﻿  source.cpp
+source.obj : error LNK2019: unresolved external symbol "char const * __cdecl GenerateSudoku(int,char * *)" (?GenerateSudoku@@YAPEBDHPEAPEAD@Z) referenced in function main
+C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\x64\Debug\SudokuSolverLogic.exe : fatal error LNK1120: 1 unresolved externals

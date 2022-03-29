@@ -1,3 +1,0 @@
-/c/Users/test9/Documents/GitHub/sudoku_app/src/backend/sudoku_backend/build/CMakeFiles/backend.dir
-/c/Users/test9/Documents/GitHub/sudoku_app/src/backend/sudoku_backend/build/CMakeFiles/edit_cache.dir
-/c/Users/test9/Documents/GitHub/sudoku_app/src/backend/sudoku_backend/build/CMakeFiles/rebuild_cache.dir

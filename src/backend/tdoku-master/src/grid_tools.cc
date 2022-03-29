@@ -26,7 +26,7 @@ void CountGrids(int start, int limit) {
 
     for (int pattern_idx = start; pattern_idx < start + limit; pattern_idx++) {
         GetPattern(pattern_idx, pattern);
-        int count = SolveSudoku(pattern, 100000, 0, solution, &guesses);
+        int count = SolveSudokuSimd(pattern, 100000, 0, solution, &guesses);
         printf("%d\t%d\n", pattern_idx, count);
     }
 }

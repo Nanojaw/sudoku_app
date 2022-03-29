@@ -11,6 +11,6 @@ mkdir -p build
     cd build
     rm -f CMakeCache.txt
     rm -rf CMakeFiles
-    cmake .. $*
+    cmake .. -DCMAKE_GNUtoMS=ON $*
     make ${target}
 )

@@ -8,6 +8,7 @@
 #include <map>
 #include <set>
 #include <vector>
+#include "../include/tdoku.h"
 
 using namespace std;
 

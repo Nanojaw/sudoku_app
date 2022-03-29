@@ -19,6 +19,9 @@ size_t TdokuSolverDpllTriadSimd(const char *input,
                                 char *solution,
                                 size_t *num_guesses);
 
+size_t TdokuSolverDpllTriadScc(const char *input, size_t limit, uint32_t configuration,
+                               char *solution, size_t *num_guesses);
+
 size_t TdokuEnumerate(const char *puzzle,
                       size_t limit,
                       void (*callback)(const char *, void *),
@@ -55,10 +58,15 @@ bool TdokuMinimize(bool pencilmark, bool monotonic, char *puzzle);
  * @return
  *       The number of solutions found up to the given limit.
  */
-static inline size_t SolveSudoku(const char *input, size_t limit, uint32_t configuration,
+static inline size_t SolveSudokuSimd(const char *input, size_t limit, uint32_t configuration,
                                  char *solution, size_t *num_guesses) {
     return TdokuSolverDpllTriadSimd(input, limit, configuration, solution, num_guesses);
 }
+
+static inline size_t SolveSudokuNormal(const char* input, size_t limit, uint32_t configuration, char* solution, size_t* num_guesses) {
+    return TdokuSolverDpllTriadScc(input, limit, configuration, solution, num_guesses);
+}
+
 
 /**
  * Enumerates all solutions to a given Sudoku or Pencilmark Sudoku puzzle.

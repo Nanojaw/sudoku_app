@@ -67,7 +67,7 @@ void GetGrid(size_t grid_idx, const void *index, const void *table, char *grid) 
     char pattern[82];
     GetPattern(current_pattern_idx, pattern);
     size_t guesses;
-    SolveSudoku(pattern, to_skip + 1, 1, grid, &guesses);
+    SolveSudokuSimd(pattern, to_skip + 1, 1, grid, &guesses);
 }
 
 extern "C"

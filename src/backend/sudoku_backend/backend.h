@@ -1,7 +1,13 @@
 #pragma once
 
+#define EXPORT __declspec(dllexport)
+
+#include "Windows.h"
+
+void load_find_logic_functions();
+
 // Function for generating sudokus
-const char* GenerateSudoku();
+EXPORT const char* GenerateSudoku();
 
 // Functions for generating hexadecimal sudokus
 const char* GenerateHexSudoku();
