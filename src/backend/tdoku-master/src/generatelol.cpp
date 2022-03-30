@@ -5,7 +5,7 @@
 #include <vector>
 
 int main(int argc, char** argv) {
-    auto lel = generateNPuzzles(argc, argv);
+    auto lel = generateNPuzzles();
 
     std::cout << lel << std::endl;
     

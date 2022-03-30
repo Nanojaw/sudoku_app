@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv)
 {
-    auto sudoku = GenerateSudoku(argc, argv);
+    auto sudoku = GenerateSudoku();
     
     return 0;
 }

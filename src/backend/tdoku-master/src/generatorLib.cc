@@ -240,8 +240,22 @@ struct Generator {
     }
 };
 
-const char* generateNPuzzles(int argc, char** argv)
+const char* generateNPuzzles()
 {
+    int argc = 9;
+
+    char** argv = new char*[9];
+
+    argv[0] = "lel";
+    argv[1] = "-p0";
+    argv[2] = "-c0";
+    argv[3] = "-g1";
+    argv[4] = "-d1";
+    argv[5] = "-n100";
+    argv[6] = "-e50";
+    argv[7] = "-l1";
+    argv[8] = "-a0";
+
     Options options{};
 
     ketopt_t opt = KETOPT_INIT;

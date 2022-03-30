@@ -4,8 +4,6 @@
 
 #include "Windows.h"
 
-void load_find_logic_functions();
-
 // Function for generating sudokus
 EXPORT const char* GenerateSudoku();
 

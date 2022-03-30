@@ -1,5 +1,2 @@
 ﻿  backend.cpp
-  backend_wrap.cpp
-C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\backend_wrap.cpp(271,36): error C2660: 'GenerateSudoku': function does not take 0 arguments
-C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\sudoku_backend\backend.h(10,20): message : see declaration of 'GenerateSudoku'
-  Generating Code...
+  sudoku_backend.vcxproj -> C:\Users\test9\Documents\GitHub\sudoku_app\src\backend\x64\Debug\sudoku_backend.dll

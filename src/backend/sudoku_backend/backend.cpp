@@ -2,22 +2,15 @@
 
 #include "backend.h"
 
-typedef const char* (__stdcall* generateNPuzzlesType)(int argc, char** argv);
-
-generateNPuzzlesType generateNPuzzles;
-
-void load_find_logic_functions()
-{
-	auto DLL = LoadLibrary(L"msys-tdoku_shared.dll");
-
-	generateNPuzzles = (generateNPuzzlesType)GetProcAddress(DLL, "generateNPuzzles");
-}
+typedef const char* (WINAPI* generateNPuzzlesFunc)();
 
 const char* GenerateSudoku()
 {
-    load_find_logic_functions();
+    auto dll = LoadLibrary(L"msys-tdoku_shared.dll");
 
-    auto lel = generateNPuzzles();
+    const auto generate_n_puzzles = (generateNPuzzlesFunc)GetProcAddress(dll, "_Z16generateNPuzzlesv");
+
+    auto sudoku = generate_n_puzzles();
 
     return nullptr;
 }
