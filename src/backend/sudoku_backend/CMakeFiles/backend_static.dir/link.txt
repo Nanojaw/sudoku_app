@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbackend_static.a CMakeFiles/backend_object.dir/backend_wrap.cpp.o CMakeFiles/backend_object.dir/backend.cpp.o
+/usr/bin/ranlib libbackend_static.a

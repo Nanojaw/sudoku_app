@@ -8,10 +8,6 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-
-#include "pch.h"
-
-
 #ifndef SWIGJAVA
 #define SWIGJAVA
 #endif
