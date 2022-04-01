@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3  -march=native CMakeFiles/run_tests.dir/test/run_tests.cc.o CMakeFiles/run_tests.dir/src/util.cc.o CMakeFiles/run_tests.dir/src/solver_dpll_triad_simd.cc.o CMakeFiles/run_tests.dir/other/other_solvers.cc.o -o run_tests 

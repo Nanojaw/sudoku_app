@@ -1,7 +1,6 @@
 .idea/
 
 bak/
-build/
 cmake-build-debug/
 data/
 gen/

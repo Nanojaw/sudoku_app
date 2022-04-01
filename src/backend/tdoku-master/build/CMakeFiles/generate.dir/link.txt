@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3  -march=native CMakeFiles/generate.dir/src/generate.cc.o CMakeFiles/generate.dir/src/util.cc.o CMakeFiles/generate.dir/src/solver_dpll_triad_simd.cc.o -o generate 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3  -march=native CMakeFiles/grid_tools.dir/src/grid_tools.cc.o -o grid_tools  libgrid_lib.a libtdoku_static.a 

@@ -89,8 +89,11 @@ configure_file (
     "${CMAKE_SOURCE_DIR}/src/build_info.h")
 
 # a gcc-linkable library with just the fast solver
-add_library(tdoku_object OBJECT src/solver_dpll_triad_scc.cc src/solver_dpll_triad_simd.cc src/util.cc src/generatorLib.cc)
+add_library(tdoku_object OBJECT src/solver_dpll_triad_scc.cc src/solver_dpll_triad_simd.cc src/util.cc src/generatorLib.cc src/backend_wrap.cpp src/backend.cpp)
 target_compile_options(tdoku_object PUBLIC -fno-exceptions -fno-rtti -fpic)
+
+find_package(JNI REQUIRED)
+target_include_directories(tdoku_object PRIVATE ${JNI_INCLUDE_DIRS})
 
 add_library(tdoku_static STATIC $<TARGET_OBJECTS:tdoku_object>)
 add_library(tdoku_shared SHARED $<TARGET_OBJECTS:tdoku_object>)

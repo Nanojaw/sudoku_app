@@ -1,0 +1,10 @@
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/tdoku_object.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/tdoku_static.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/tdoku_shared.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/run_benchmark.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/run_tests.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/generate.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/grid_lib.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/grid_tools.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/edit_cache.dir
+/home/teststuffv20/GitReps/sudoku_app/src/backend/tdoku-master/build/CMakeFiles/rebuild_cache.dir
