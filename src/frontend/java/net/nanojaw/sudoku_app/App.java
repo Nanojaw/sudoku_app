@@ -1,10 +1,10 @@
-package test;
+package net.nanojaw.sudoku_app;
 
 import net.nanojaw.sudoku_app.backend.backend;
 
-public class app { 
+public class App {
     public static void main(String[] args) {
-        System.loadLibrary("libtdoku_shared");
+        System.loadLibrary("backend");
 
         System.out.println(backend.GenerateSudoku());
     }

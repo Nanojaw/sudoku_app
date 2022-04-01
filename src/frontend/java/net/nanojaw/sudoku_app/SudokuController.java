@@ -62,17 +62,18 @@ public class SudokuController {
     public void initialize() {
 
         sudoku = new Sudoku(new byte[]{
-                5, 0, 0, 0, 0, 0, 2, 8, 0,
-                0, 0, 0, 2, 0, 9, 0, 4, 5,
-                0, 7, 0, 0, 8, 0, 0, 0, 0,
 
-                3, 0, 8, 0, 5, 2, 4, 1, 7,
-                1, 0, 5, 7, 9, 3, 6, 2, 0,
-                7, 0, 6, 0, 0, 0, 0, 0, 9,
 
-                9, 1, 0, 0, 2, 6, 0, 0, 0,
-                2, 0, 0, 0, 0, 0, 0, 0, 4,
-                0, 5, 0, 8, 0, 7, 1, 0, 0});
+                5, 6, 9, 3, 7, 4, 2, 8, 1,
+                8, 3, 1, 2, 6, 9, 7, 4, 5,
+                4, 7, 2, 1, 8, 5, 9, 3, 6,
+                3, 9, 8, 6, 5, 2, 4, 1, 7,
+                1, 4, 5, 7, 9, 3, 6, 2, 8,
+                7, 2, 6, 4, 1, 8, 3, 5, 9,
+                9, 1, 4, 5, 2, 6, 8, 7, 3,
+                2, 8, 7, 9, 3, 1, 5, 6, 4,
+                6, 5, 3, 8, 4, 7, 1, 9, 2
+        });
         String grid = bytesToString(ToGrid(sudoku.sudoku));
         // TODO Add when backend is done
         //sudoku = backend.LoadSudoku();
@@ -134,6 +135,7 @@ public class SudokuController {
                 sudoku.sudoku[(int) caller.getProperties().get("index")] = Byte.parseByte(keyEvent.getCode().getChar());
 
                 //TODO Implement victory checking
+                if (sudoku.done()) label.setText("Victory");
             }
         });
     }

@@ -1,5 +1,6 @@
 package net.nanojaw.sudoku_app;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -20,9 +21,11 @@ public class Sudoku {
             entry(72, 54), entry(73, 54), entry(74, 54), entry(75, 57), entry(76, 57), entry(77, 57), entry(78, 60), entry(79, 60), entry(80, 60));
 
     public final byte[] sudoku;
+    public final byte[] finished;
 
     public Sudoku(byte[] sudoku) {
-        this.sudoku = sudoku;
+        this.sudoku = Arrays.copyOfRange(sudoku, 0, 81);
+        this.finished = Arrays.copyOfRange(sudoku, 81, 162);
     }
 
     boolean fitsHorizontal(int number, int index) {
@@ -51,5 +54,14 @@ public class Sudoku {
 
     boolean fits(int number, int index) {
         return (fitsHorizontal(number, index) && fitsVertical(number, index) && fitsSquare(number, index));
+    }
+
+    boolean done() {
+        // Checking for zeroes, since if there are none
+        for (int i = 0; i < 81; i++) {
+            if (sudoku[i] == 0) return false;
+            if (sudoku[i] != finished[i]) System.out.println("Invalid sudoku");
+        }
+        return true;
     }
 }
